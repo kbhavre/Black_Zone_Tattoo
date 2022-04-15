@@ -27,3 +27,23 @@ menu_item.forEach((item) => {
     mobile_menu.classList.toggle("active");
   });
 });
+
+var btn = $("#button");
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass("show");
+  } else {
+    btn.removeClass("show");
+  }
+});
+btn.on("click", function (e) {
+  e.preventDefault();
+  $("html,body").animate({ scrollTop: 0 }, "300");
+});
+
+VanillaTilt.init(document.querySelectorAll(".card"), {
+  max: 25,
+  speed: 400,
+  glare: true,
+  "max-glare": 1,
+});

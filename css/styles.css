@@ -12,12 +12,7 @@ html {
 }
 
 body {
-    background-image: url('/background.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: top center;
-    position: relative;
-    z-index: 1;
+    background-color: black;
 }
 
 a {
@@ -33,6 +28,7 @@ a {
 }
 
 /* Header Section */
+
 .navbar-image {
     height: 80px;
     width: 80px;
